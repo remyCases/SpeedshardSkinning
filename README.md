@@ -1,4 +1,4 @@
-# Speedshard - Money&Dungeon
+# Speedshard - Skinning
 
 > [!CAUTION]
 > **This mod does not work with the current version of MSL (0.9)** 
@@ -34,6 +34,7 @@ A [video](https://www.youtube.com/watch?v=_J0oJYGi38E&t=13s&ab_channel=Nylux) wa
 - Enable the mod by checking the `Enable` box.
 - Click the floppy disk icon on the topside. A dialog box should pop up.
 - In this dialog box, create a new `.win` file and save (`data.win` if you didn't rename it).
+- Move the `trapper_bran.de2` into the `Stoneshard/dialogs` folder.
 
 You can now play the game with the modded version !
 
