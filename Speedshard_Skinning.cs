@@ -4,6 +4,8 @@
 
 using ModShardLauncher;
 using ModShardLauncher.Mods;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Speedshard_Skinning;
 public class SpeedshardSkinning : Mod
@@ -15,6 +17,8 @@ public class SpeedshardSkinning : Mod
 
     public override void PatchMod()
     {
+        File.WriteAllText("_before.json", JsonConvert.SerializeObject(ModLoader.GetTable("gml_GlobalScript_table_NPC_Lines")).Replace("\n", ""));
+
        LocalizationDialog localizationDialog = new(
             new LocalizationSentence(
                 id: "asking_for_something_free",
@@ -30,5 +34,12 @@ public class SpeedshardSkinning : Mod
                 sentence: "I'm too novice to learn something, I should come back later.")
         );
         localizationDialog.InjectTable(); 
+
+        File.WriteAllText("_after.json", JsonConvert.SerializeObject(ModLoader.GetTable("gml_GlobalScript_table_NPC_Lines")).Replace("\n", ""));
+
+        Msl.AddFunction(ModFiles.GetCode("scr_unlock_skinning_for_free.gml"), "scr_unlock_skinning_for_free");
+        Msl.AddFunction(ModFiles.GetCode("scr_npc_can_study_skinning.gml"), "scr_npc_can_study_skinning");
+        Msl.AddFunction(ModFiles.GetCode("scr_npc_check_level.gml"), "scr_npc_check_level");
+        Msl.AddFunction(ModFiles.GetCode("scr_npc_uncheck_level.gml"), "scr_npc_uncheck_level");
     }
 }
