@@ -7,7 +7,7 @@
 
 This mod add some dialog with a NPC who can teach how to skin for free !
 
-Other functionalities can be found in [Speedshard_Core](https://github.com/remyCases/SpeedshardCore), [Speedshard_Sprint](https://github.com/remyCases/SpeedshardSprint), [Speedshard_Backpack](https://github.com/remyCases/SpeedshardBackpack), [Speedshard_MoneyDungeon](https://github.com/remyCases/SpeedshardMoneyDungeon) and Speedshard_Stances *(to be released soon)*.
+Other functionalities can be found in [Speedshard_Core](https://github.com/remyCases/SpeedshardCore), [Speedshard_Sprint](https://github.com/remyCases/SpeedshardSprint), [Speedshard_Backpack](https://github.com/remyCases/SpeedshardBackpack), [Speedshard_MoneyDungeon](https://github.com/remyCases/SpeedshardMoneyDungeon) and [Speedshard_Stances](https://github.com/remyCases/SpeedshardStances).
 
 ## Installation
 

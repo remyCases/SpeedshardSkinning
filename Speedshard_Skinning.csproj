@@ -16,9 +16,6 @@
     <Reference Include="UndertaleModTool">
       <HintPath>..\..\UndertaleModTool.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\Newtonsoft.Json.dll</HintPath>
-    </Reference>
   </ItemGroup>
   
 </Project>
