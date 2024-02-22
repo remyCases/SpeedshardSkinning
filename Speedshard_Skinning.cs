@@ -4,13 +4,16 @@
 
 using ModShardLauncher;
 using ModShardLauncher.Mods;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Speedshard_Skinning;
 public class SpeedshardSkinning : Mod
 {
     public override string Author => "zizani";
     public override string Name => "Speedshard - Skinning";
     public override string Description => "I've heard someone can teach you how to skin for free.";
-    public override string Version => "1.0.0.0";
+    public override string Version => "1.1.0.0";
     public override string TargetVersion => "0.8.2.10";
 
     public override void PatchMod()
@@ -31,9 +34,20 @@ public class SpeedshardSkinning : Mod
         );
         localizationDialog.InjectTable(); 
 
-        Msl.AddFunction(ModFiles.GetCode("scr_unlock_skinning_for_free.gml"), "scr_unlock_skinning_for_free");
-        Msl.AddFunction(ModFiles.GetCode("scr_npc_can_study_skinning.gml"), "scr_npc_can_study_skinning");
-        Msl.AddFunction(ModFiles.GetCode("scr_npc_check_level.gml"), "scr_npc_check_level");
-        Msl.AddFunction(ModFiles.GetCode("scr_npc_uncheck_level.gml"), "scr_npc_uncheck_level");
+        // utility functions
+        string[] functionNames = {
+            "scr_unlock_skinning_for_free",
+            "scr_npc_can_study_skinning",
+            "scr_npc_check_level",
+            "scr_npc_uncheck_level"
+        };
+
+        foreach(string functionName in functionNames)
+        {
+            if (DataLoader.data.Code.FirstOrDefault(t => t.Name.Content == functionName) == null)
+            {
+                Msl.AddFunction(ModFiles.GetCode(functionName + ".gml"), functionName);
+            }
+        }
     }
 }
