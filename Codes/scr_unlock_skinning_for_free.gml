@@ -43,10 +43,10 @@ function scr_unlock_skinning_for_free()
                 _set_number++
         }
     }
-    _sprite = o_skill_flaying.sprite_index
-    _name = o_skill_flaying.name
-    _offsetLeft = ((global.cameraWidth / 2) - 109)
-    _offsetTop = ((global.cameraHeight / 2) - 140)
+    var _sprite = o_skill_flaying.sprite_index
+    var _name = o_skill_flaying.name
+    var _offsetLeft = ((global.cameraWidth / 2) - 109)
+    var _offsetTop = ((global.cameraHeight / 2) - 140)
     with (scr_guiCreateSimple(global.guiBaseContainerVisible, o_skill_unlock_alert))
     {
         textUnlock = "Learnt:"
@@ -57,4 +57,5 @@ function scr_unlock_skinning_for_free()
         timeDelay = (room_speed + alarm[1])
         scr_guiLayoutOffsetUpdate(id, _offsetLeft, _offsetTop)
     }
+    audio_play_sound(snd_dialog_reward_window_st_1, 4, false)
 }
