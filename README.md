@@ -2,7 +2,7 @@
 
 ## Description
 
-This mod add some dialog with a NPC who can teach how to skin for free !
+This mod adds a dialog with a NPC who can teach how to skin for free !
 
 Other functionalities can be found in [Speedshard_Core](https://github.com/remyCases/SpeedshardCore), [Speedshard_Sprint](https://github.com/remyCases/SpeedshardSprint), [Speedshard_Backpack](https://github.com/remyCases/SpeedshardBackpack), [Speedshard_MoneyDungeon](https://github.com/remyCases/SpeedshardMoneyDungeon) and [Speedshard_Stances](https://github.com/remyCases/SpeedshardStances).
 
@@ -46,9 +46,14 @@ Then you can contact me on [Discord](https://discord.com/users/20033086552237670
 Other mods I've made:
 - Stoneshard:
     - [Character Creation](https://github.com/remyCases/CharacterCreator)
+    - [Pelt Durability](https://github.com/remyCases/Stoneshard-PeltDurability)
+    - [MoreSaveSlots](https://github.com/remyCases/Stoneshard-MoreSaveSlots)
+    - [Defeat Scenarios](https://github.com/remyCases/Stoneshard-DefeatScenarios)
 
 - Shardpunk:
     - [Shardpunk-BiggerTeam](https://github.com/remyCases/Shardpunk-BiggerTeam)
+    - [Shardpunk-Faster](https://github.com/remyCases/Shardpunk-Faster)
+    - [Shardpunk-MoreSkillLevels](https://github.com/remyCases/Shardpunk-MoreSkillLevels)
 
 - Airship Kingdom Adrift:
     - [ProductionPanel](https://github.com/remyCases/AKAMod_ProdPanel)
