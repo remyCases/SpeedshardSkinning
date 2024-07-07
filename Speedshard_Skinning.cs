@@ -4,8 +4,6 @@
 
 using ModShardLauncher;
 using ModShardLauncher.Mods;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Speedshard_Skinning;
 public class SpeedshardSkinning : Mod
