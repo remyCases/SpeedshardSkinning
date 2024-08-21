@@ -11,7 +11,7 @@ public class SpeedshardSkinning : Mod
     public override string Author => "zizani";
     public override string Name => "Speedshard - Skinning";
     public override string Description => "I've heard someone can teach you how to skin for free.";
-    public override string Version => "1.3.1";
+    public override string Version => "1.3.2";
     public override string TargetVersion => "0.8.2.10";
 
     public override void PatchMod()
